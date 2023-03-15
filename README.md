@@ -1,6 +1,6 @@
 # OctoPrint-Octocam
 
-**TODO:** Plugin to provide a stream/snapshot url and stream as an alternative to YawCam.
+**Description:** Plugin to provide a stream/snapshot url and stream as an alternative to YawCam.
 
 ## Setup
 
