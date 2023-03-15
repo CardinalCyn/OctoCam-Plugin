@@ -1,0 +1,30 @@
+<button id="pull-cameras-button">Pull Cameras</button>
+<form class="form-horizontal">
+    <div class="control-group">
+        <label class="control-label">Available Cameras:</label>
+        <select class="form-control" name="userCameras"></select>
+        <br />
+        <label class="control-label" for="width">Width</label>
+        <div class="controls">
+            <input type="text" name="width" data-bind="value: settings.plugins.octocam.width"/>
+        </div>
+        <label class="control-label" for="height">Height</label>
+        <div class="controls">
+            <input type="text" name="height" data-bind="value: settings.plugins.octocam.height"/>
+        </div>
+        <button id="pull-feed-button">Pull feed</button>
+    </div>
+</form>
+<div>
+    <div id="streamUrlContainer">
+        <label id="streamUrl">Stream Url</label>
+        <button id="copyStreamUrl">Copy</button>
+    </div>
+    <div id="snapshotUrlContainer">
+        <label id="snapshotUrl">Snapshot Url</label>
+        <button id="copySnapshotUrl">Copy</button>
+    </div>
+</div>
+{% block javascript %}
+    <script type="text/javascript" src="{{ url_for('static', filename='js/octocam.js') }}"></script>
+{% endblock %}
